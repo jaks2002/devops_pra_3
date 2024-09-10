@@ -22,7 +22,9 @@ pipeline {
                 script {
                     echo "Testing the application..."
                 }
-            }stage('deploy') {
+            }
+        }
+        stage('deploy') {
             steps {
                 script {
                     echo "Deploying the application..."
@@ -31,5 +33,3 @@ pipeline {
         }
     }
 }
-
-        }
